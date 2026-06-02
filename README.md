@@ -76,7 +76,7 @@ python setup.py install
 
 The `main.py` script handles training and evaluation.
 
-### 1. Training
+### 1. Run
 
 To train NEMO with the noise-robust excess multi-task optimization strategy:
 
@@ -89,20 +89,6 @@ python main.py \
   --epochs 50 \
   --bs 64 \
   --gpu_id 0 \
-```
-
-### 2. Evaluation
-
-To evaluate a trained NEMO model on the test set:
-
-```bash
-python main.py \
-  --mode eval \
-  --dataset toxacute \
-  --data_dir ./data \
-  --load_path ./ckpt \
-  --ckpt_name NEMO_ckpt \
-  --gpu_id 0
 ```
 
 ## 🪪 License
